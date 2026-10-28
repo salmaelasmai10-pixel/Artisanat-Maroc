@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5M9P6NNF');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Merci — Artisanat Maroc</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,400&family=Albert+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M9P6NNF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="split">
+      <main class="read">
+        <div class="card">
+          <svg class="stripe" aria-hidden="true" focusable="false">
+            <defs>
+              <pattern id="bars" width="56" height="56" patternUnits="userSpaceOnUse">
+                <rect width="28" height="56" class="bar-ink" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#bars)" />
+          </svg>
+          <div class="card-body">
+            <a class="wordmark" href="index.html">Artisanat Maroc</a>
+            <h1 id="merci-title">Merci, votre demande est notée</h1>
+            <p class="lead">
+              Nous revenons vers vous sous 48 h ouvrées avec un devis détaillé
+              et des photos d'échantillons. Ce site étant pédagogique, aucune
+              donnée n'a été transmise.
+            </p>
+            <a class="btn btn-primary" href="index.html">Retour à l'accueil</a>
+          </div>
+        </div>
+      </main>
+      <aside class="stage" aria-label="Photographie d'atelier">
+        <figure class="shot is-on">
+          <img src="assets/ceramic-craftsman-in-fez-morocco.jpg" width="1600" height="1423"
+            alt="Un maâlem assemble à la main un panneau de tesselles posé au sol" />
+          <figcaption>Assemblage d'un panneau, Fès</figcaption>
+        </figure>
+      </aside>
+    </div>
+
+    <script>
+      try {
+        var nom = sessionStorage.getItem("am-nom");
+        if (nom) {
+          document.getElementById("merci-title").textContent = "Merci " + nom + ", votre demande est notée";
+          sessionStorage.removeItem("am-nom");
+        }
+      } catch (e) {}
+    </script>
+  </body>
+</html>
