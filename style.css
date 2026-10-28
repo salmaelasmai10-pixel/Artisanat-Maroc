@@ -543,6 +543,7 @@ h1, h2, .wordmark, .foot-name {
 }
 .legal, .credits { font-size: var(--step-small); }
 .legal { max-width: 60ch; }
+.merci-credit { padding: 16px var(--gap) 24px; color: var(--ink); }
 .credits { margin-top: 8px; max-width: 60ch; }
 .credits summary { cursor: pointer; font-weight: 500; }
 .credits p { margin-top: 8px; }
